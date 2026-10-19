@@ -1,0 +1,5 @@
+# API keys live here, never commit them
+config.local.js
+
+.DS_Store
+node_modules/
