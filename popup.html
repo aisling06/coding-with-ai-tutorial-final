@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Finder</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Style Finder</h1>
+
+  <form id="search-form">
+    <label>Person
+      <input name="person" required placeholder="e.g. Carrie Bradshaw">
+    </label>
+
+    <label>Season
+      <select name="season" required>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+      </select>
+    </label>
+
+    <label>Category (optional)
+      <input name="category" placeholder="e.g. skirt">
+    </label>
+
+    <label>Color (optional)
+      <input name="color" placeholder="e.g. pink">
+    </label>
+
+    <label>Budget (optional)
+      <input name="budget" placeholder="e.g. under $100 per item">
+    </label>
+
+    <button type="submit">Find outfits</button>
+  </form>
+
+  <p id="status"></p>
+  <div id="results"></div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
